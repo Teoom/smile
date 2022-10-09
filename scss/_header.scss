@@ -1,0 +1,180 @@
+@media (max-width: 415px) {
+    header {
+        .header__scroll {
+            // position: fixed;
+            // top: 0;
+            background-color: #fff;
+            z-index: 99;
+        }
+        .header__content {
+            padding: 26px;
+            display: flex;
+            border-bottom: 1px solid #EAEAEA;
+        }
+
+        .header__logo {
+            width: 142px;
+            height: 45px;
+            margin-right: 105px;
+        }
+
+        .watsapp {
+            margin-right: 38px;
+        }
+
+        .header__burger {
+            width: 35px;
+            height: 21px;
+            position: relative;
+            z-index: 12;
+        }
+
+        .header__burger span {
+            width: 100%;
+            height: 3px;
+            background-color: #37474F;
+            border-radius: 5px;
+            position: absolute;
+            top: 9px;
+            transition: all 0.3s ease 0s;
+            
+        }
+        .header__burger::before,
+        .header__burger::after  {
+            content: '';
+            width: 30px;
+            height: 3px;
+            background-color: #37474F;
+            border-radius: 5px;
+            position: absolute;
+            right: 0;
+            transition: all 0.3s ease 0s;
+        }
+        .header__burger::before {
+            top: 0;
+        }
+        .header__burger::after {
+            bottom: 0;
+        }
+        
+        .header__burger.active span {
+            transform: scale(0);
+        }
+        .header__burger.active::before,
+        .header__burger.active::after  {
+            position: absolute;
+            top: 20px;
+            width: 80%;
+            animation: show 1s step-end;
+
+        }
+        @keyframes show {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .header__burger.active::before {
+             transform: rotate(45deg);
+        }
+
+        .header__burger.active::after {
+            transform: rotate(-45deg);
+        }
+       
+
+
+        .header__menu {
+            width: 288px;
+            overflow: auto;
+            display: none;
+            padding: 30px 30px;
+            box-shadow: -4px 0px 22px rgba(0, 0, 0, 0.25);
+            position: absolute;
+            top: 0;
+            right: -100%;
+            z-index: 11;
+            background-color: #fff;
+
+        }
+
+        .header__menu.active {
+            right: -1%;
+            display: block;
+            animation: open 1s linear;
+        }
+
+        @keyframes open {
+            0% {
+                right: -100%;
+            }
+            100% {
+                right: -1%;
+            }
+        }
+
+
+ 
+        .social-header{
+            margin-bottom: 115px;   
+        }
+        .header__nav {
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 126px;
+        }
+        .header__list li {
+            list-style: none;
+            text-align: right;
+            margin-bottom: 25px;
+        }
+        .header__link {
+            text-decoration: none;
+            font: 24px/32.74px Nunito ;
+            font-weight: 600;
+            color: #000;
+        }
+
+        .header__disc {
+            text-align: right;
+
+            .header__logo {
+                width: 100%;
+                margin-bottom: 18px;
+                display: flex;
+                justify-content: flex-end;
+            }
+
+            p {
+                margin-bottom: 18px;
+            }
+            
+        }
+
+        .header__menu-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vh;
+            height: 100vh;
+            z-index: 10;
+        }
+
+        .header__menu-overlay.active {
+            display: block;
+        }
+
+        .header__text {
+            // margin-top: 100px;
+            text-align: center;
+            padding: 15px 56px;
+            font: 20px/27.28px Nunito ;
+            font-weight: 300;
+            color: #37474F;
+        }
+    }
+}

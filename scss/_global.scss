@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;600;700;800&display=swap');
+
+@media (max-width: 415px) {
+    html, body {
+        overflow-x:hidden;
+    } 
+    
+    body {
+    font-family: Nunito, sans-serif;
+    background-color: #F5F5F5;
+    color: #000;
+    }
+
+    .social {
+        display: flex;
+
+        a {
+            margin-right: 16px;
+        }
+    }
+
+    .btn__free-consult {
+        display: block;
+        padding: 18px 24px;
+        border-radius: 4px;
+        background-color: #37474F;
+        color:  #fff;
+        font: 16px/21.82px Nunito;
+        font-weight: 800;
+    }
+
+    
+}
+
+
+
