@@ -142,7 +142,6 @@ img {
   header .header__menu-overlay.active {
     display: block; }
   header .header__text {
-    margin-top: 100px;
     text-align: center;
     padding: 15px 56px;
     font: 20px/27.28px Nunito;
